@@ -1,0 +1,46 @@
+@import 'head.less';
+@import 'foot.less';
+.bg-contain{
+  width: 1226px;
+}
+.cart{
+  table{
+    text-align: center;
+    width: 100%;
+    thead{
+      .choose-btn{
+        width: 50px;
+      }
+    }
+    tbody{
+      tr{
+        height: 150px;
+      }
+      img{
+        width: 100px;
+      }
+      .good-name{
+        width: 400px;
+        padding: 20px 0;
+      }
+      button{
+        width: 20px;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      .good-number{
+        width: 50px;
+        text-align: center;
+      }
+      .remove-cart,.buy{
+        width: 80px;
+        background-color: salmon;
+        line-height: 30px;
+        border: none;
+        &:hover{
+          color: green;
+        }
+      }
+    }
+  }
+}

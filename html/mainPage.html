@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../plug/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/mainPage.css?v=20200225">
+  <title>首页</title>
+</head>
+
+<body>
+  <!-- 头部导航栏 -->
+  <div class="menu-contain clearfix info">
+    <div class="info-left fl"><i class="fa fa-home" aria-hidden="true"></i>欢迎<span>您</span>来到 Second-hand market</div>
+    <div class="info-right fr">
+      <ul>
+        <li>
+          <a href="loginPage.html">您好，请登录</a>
+        </li>|
+        <li>
+          <a href="registerPage.html">注册</a>
+        </li>|
+        <li>
+          <a href="collectPage.html">我的收藏<i class="fa fa-bookmark-o" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 头部搜索栏 -->
+  <div class="content-contain search">
+    <img src="../images/mainPage/icon.png" alt="Second-hand market" title="欢迎来到二手交易市场">
+    <div class="input">
+      <input type="text" autofocus>
+      <button>搜索</button>
+    </div>
+    <div class="cart">
+      <a href="cartPage.html">我的购物车<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <!-- 导航菜单栏 -->
+  <div class="content-contain menu">
+    <ul>
+      <li class="choose-li">
+        <a href="javascript:0">首页</a>
+      </li>
+      <li>
+        <a href="phonePage.html">手机通讯</a>
+      </li>
+      <li>
+        <a href="ipadPage.html">平板</a>
+      </li>
+      <li>
+        <a href="computerPage.html">电脑办公</a>
+      </li>
+      <li>
+        <a href="digicamPage.html">数码影音</a>
+      </li>
+      <li>
+        <a href="luxuryPage.html">奢侈品</a>
+      </li>
+      <li>
+        <a href="home-appPage.html">家电</a>
+      </li>
+      <li>
+        <a href="bookPage.html">图书</a>
+      </li>
+    </ul>
+    <div class="banner">
+      <img src="../images/mainPage/banner1.jpg">
+      <div class="banner-section">
+        <ul>
+          <li>
+            <a href="javascript:0" style="color:#000;">权威保证</a>
+          </li>
+          <li>
+            <a href="javascript:0" style="color:#000;">超长质保</a>
+          </li>
+          <li>
+            <a href="time-shoppingPage.html">限时秒杀</a>
+          </li>
+          <li>
+            <a href="hot-shoppingPage.html">热卖商品</a>
+          </li>
+          <li>
+            <a href="#footer">关于我们</a>
+          </li>
+          <li>
+            <a href="#footer">联系我们</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 商品展示 -->
+  <div class="bg-contain">
+    <div class="content-contain">
+      <!-- 手机馆 -->
+      <div class="show-phone good">
+        <p>| 手机馆 <span>手机8折起</span></p>
+        <div class="show">
+          <div class="big-photo">
+            <img src="../images/mainPage/big-phone.jpg">
+          </div>
+          <div class="display-photo" id="phone"></div>
+        </div>
+      </div>
+      <!-- 电脑馆 -->
+      <div class="show-computer good">
+        <p>| 电脑馆 <span>电脑8折起</span></p>
+        <div class="show">
+          <div class="big-photo">
+            <img src="../images/mainPage/big-computer.jpg">
+          </div>
+          <div class="display-photo" id="computer"></div>
+        </div>
+      </div>
+      <!-- 平板馆 -->
+      <div class="show-ipad good">
+        <p>| 平板馆 <span>好物低至3折起</span></p>
+        <div class="show">
+          <div class="big-photo">
+            <img src="../images/mainPage/big-ipad.jpg">
+          </div>
+          <div class="display-photo" id="ipad"></div>
+        </div>
+      </div>
+      <!-- 数码馆 -->
+      <div class="show-digicam good">
+        <p>| 数码馆 <span>好物低至3折起</span></p>
+        <div class="show">
+          <div class="big-photo">
+            <img src="../images/mainPage/big-digicam.jpg">
+          </div>
+          <div class="display-photo" id="digicam"></div>
+        </div>
+      </div>
+      <!-- 大家电 -->
+      <div class="show-bigApp good">
+        <p>| 大家电 <span>好物低至3折起</span></p>
+        <div class="show">
+          <div class="big-photo">
+            <img src="../images/mainPage/big-bigApp.jpg">
+          </div>
+          <div class="display-photo" id="bigApp"></div>
+        </div>
+      </div>
+      <!-- 小家电 -->
+      <div class="show-smallApp good">
+        <p>| 小家电 <span>好物低至3折起</span></p>
+        <div class="show">
+          <div class="big-photo">
+            <img src="../images/mainPage/big-smallApp.jpg">
+          </div>
+          <div class="display-photo" id="smallApp"></div>
+        </div>
+      </div>
+      <!-- 腕表馆 -->
+      <div class="show-watch good">
+        <p>| 腕表馆 <span>好物低至3折起</span></p>
+        <div class="show">
+          <div class="big-photo">
+            <img src="../images/mainPage/big-watch.jpg">
+          </div>
+          <div class="display-photo" id="watch"></div>
+        </div>
+      </div>
+      <!-- 箱包馆 -->
+      <div class="show-bag good">
+        <p>| 箱包馆 <span>好物低至3折起</span></p>
+        <div class="show">
+          <div class="big-photo">
+            <img src="../images/mainPage/big-bag.jpg">
+          </div>
+          <div class="display-photo" id="bag"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 底部栏 -->
+  <div class="bg-contain" id="foot">
+    <div class="content-contain footer" id="footer">
+      <p>关于 Second-hand market | 联系我们 | 客服电话：xxx-xxx-xxxx</p><br>
+      <p>网页制作者：2016级计算机科学与技术一班 陈玉琴</p><br>
+      <p>学号：20161251020</p>
+    </div>
+  </div>
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../plug/js/template-web.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/mainPage.js?v=20200309"></script>
+
+  <!-- 手机模板 -->
+  <script type="html/text" id='template-phone'>
+    {{each list v i}}
+      <a goodIndex={{v.goodIndex}} href="javascript:0;">
+        <img src="{{v.src}}">
+        <p>{{v.head}}{{v.name}}</p>
+        <span>¥{{v.price}}</span>
+      </a>
+    {{/each}}
+  </script>
+
+  <!-- 电脑模板 -->
+  <script type="html/text" id='template-computer'>
+    {{each list v i}}
+      <a goodIndex={{v.goodIndex}} href="javascript:0;">
+        <img src="{{v.src}}">
+        <p>{{v.head}}{{v.name}}</p>
+        <span>¥{{v.price}}</span>
+      </a>
+    {{/each}}
+  </script>
+
+  <!-- 平板模板 -->
+  <script type="html/text" id='template-ipad'>
+    {{each list v i}}
+      <a goodIndex={{v.goodIndex}} href="javascript:0;">
+        <img src="{{v.src}}">
+        <p>{{v.head}}{{v.name}}</p>
+        <span>¥{{v.price}}</span>
+      </a>
+    {{/each}}
+  </script>
+
+  <!-- 数码模板 -->
+  <script type="html/text" id='template-digicam'>
+    {{each list v i}}
+      <a goodIndex={{v.goodIndex}} href="javascript:0;">
+        <img src="{{v.src}}">
+        <p>{{v.head}}{{v.name}}</p>
+        <span>¥{{v.price}}</span>
+      </a>
+    {{/each}}
+  </script>
+
+  <!-- 大家电模板 -->
+  <script type="html/text" id='template-bigApp'>
+    {{each list v i}}
+      <a goodIndex={{v.goodIndex}} href="javascript:0;">
+        <img src="{{v.src}}">
+        <p>{{v.head}}{{v.name}}</p>
+        <span>¥{{v.price}}</span>
+      </a>
+    {{/each}}
+  </script>
+
+  <!-- 小家电模板 -->
+  <script type="html/text" id='template-smallApp'>
+    {{each list v i}}
+      <a goodIndex={{v.goodIndex}} href="javascript:0;">
+        <img src="{{v.src}}">
+        <p>{{v.head}}{{v.name}}</p>
+        <span>¥{{v.price}}</span>
+      </a>
+    {{/each}}
+  </script>
+
+  <!-- 腕表模板 -->
+  <script type="html/text" id='template-watch'>
+    {{each list v i}}
+      <a goodIndex={{v.goodIndex}} href="javascript:0;">
+        <img src="{{v.src}}">
+        <p>{{v.head}}{{v.name}}</p>
+        <span>¥{{v.price}}</span>
+      </a>
+    {{/each}}
+  </script>
+
+  <!-- 箱包模板 -->
+  <script type="html/text" id='template-bag'>
+    {{each list v i}}
+      <a goodIndex={{v.goodIndex}} href="javascript:0;">
+        <img src="{{v.src}}">
+        <p>{{v.head}}{{v.name}}</p>
+        <span>¥{{v.price}}</span>
+      </a>
+    {{/each}}
+  </script>
+</body>
+
+</html>

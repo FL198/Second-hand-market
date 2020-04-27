@@ -1,0 +1,298 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+input,
+button {
+  outline: none;
+}
+input {
+  padding-left: 4px;
+  font-size: 16px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.single-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.menu-contain {
+  width: 1200px;
+  margin: 0 auto;
+}
+.content-contain {
+  width: 1100px;
+  margin: 0 auto;
+}
+.choose-li {
+  background-color: burlywood;
+}
+.bg-contain {
+  width: 1349px;
+  background-color: #f6f6f6;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.one-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.display-good {
+  display: flex;
+  justify-content: space-arounds;
+  flex-wrap: wrap;
+}
+.display-good a {
+  width: 25%;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 40px 10px 20px 10px;
+  box-sizing: border-box;
+}
+.display-good a:hover {
+  border: 1px solid #ccc;
+  transition: all .7s;
+}
+.display-good a .about {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+}
+.display-good a .about .price {
+  color: #E4393C;
+  font-size: 20px;
+}
+.display-good a .about .detail {
+  margin-top: 5px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 20px;
+}
+.display-good a .about .detail .detail-content:hover {
+  text-decoration: underline;
+  color: royalblue;
+}
+.display-good a .about .comment {
+  line-height: 28px;
+}
+.display-good a .oper {
+  color: #666;
+  font-size: 14px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.display-good a .oper div:hover {
+  color: red;
+}
+.display-good a .oper i {
+  margin-right: 5px;
+}
+.info {
+  background-color: #f2f2f2;
+  line-height: 30px;
+  padding: 0 88px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.info .info-left .fa-home {
+  margin-right: 6px;
+}
+.info .info-right ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.info .info-right ul li {
+  padding: 0 10px;
+}
+.info .info-right ul li a {
+  color: #666666;
+}
+.info .info-right ul li a:hover {
+  color: #d41414;
+}
+.info .info-right ul li a .fa-bookmark-o {
+  margin-left: 5px;
+}
+.search img {
+  vertical-align: middle;
+}
+.search .input {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+}
+.search .input input {
+  width: 430px;
+  line-height: 30px;
+  border: 2px solid darkblue;
+}
+.search .input button {
+  position: absolute;
+  border: none;
+  line-height: 32px;
+  padding: 0 15px;
+  right: 0px;
+  top: 1px;
+  background-color: darkblue;
+  color: #fff;
+  cursor: pointer;
+}
+.search .cart {
+  display: inline-block;
+  margin-left: 68px;
+  border: 2px solid #ccc;
+  padding: 4px 10px 6px 10px;
+  background-color: #f2f2f2;
+}
+.search .cart a:hover {
+  color: brown;
+}
+.search .cart i {
+  margin-left: 5px;
+}
+.menu {
+  margin-bottom: 30px;
+}
+.menu > ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  background: darkseagreen;
+}
+.menu > ul li {
+  flex: 1;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.menu > ul li a {
+  color: #fff;
+}
+.menu > ul li:hover {
+  background-color: burlywood;
+}
+.footer {
+  margin-top: 100px;
+  background-color: #2e2e2e;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 30px 0 20px 0;
+  line-height: 10px;
+}
+.bg-contain {
+  width: 1226px;
+}
+.time-shopping {
+  margin-top: 50px;
+  text-align: center;
+}
+.time-shopping h1 {
+  font-size: 60px;
+}
+.time-shopping .time-show {
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.time-shopping .time-show div {
+  border-radius: 15PX;
+  width: 100px;
+  line-height: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #ccc;
+}
+.time-shopping .time-show .maohao {
+  background-color: #fff;
+}
+.time-shopping .good-show {
+  display: flex;
+  justify-content: space-arounds;
+  flex-wrap: wrap;
+}
+.time-shopping .good-show a {
+  width: 25%;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 40px 10px 20px 10px;
+  box-sizing: border-box;
+}
+.time-shopping .good-show a:hover {
+  border: 1px solid #ccc;
+  transition: all .7s;
+}
+.time-shopping .good-show a .about {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+}
+.time-shopping .good-show a .about .price {
+  color: #E4393C;
+  font-size: 20px;
+}
+.time-shopping .good-show a .about .detail {
+  margin-top: 5px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 20px;
+}
+.time-shopping .good-show a .about .detail .detail-content:hover {
+  text-decoration: underline;
+  color: royalblue;
+}
+.time-shopping .good-show a .about .comment {
+  line-height: 28px;
+}
+.time-shopping .good-show a .oper {
+  color: #666;
+  font-size: 14px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.time-shopping .good-show a .oper div:hover {
+  color: red;
+}
+.time-shopping .good-show a .oper i {
+  margin-right: 5px;
+}
+.time-shopping .good-show .del-price {
+  font-size: 16px;
+  color: #ccc;
+  margin-left: 15px;
+  line-height: 30px;
+}

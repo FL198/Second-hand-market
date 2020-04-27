@@ -1,0 +1,67 @@
+@import 'head.less';
+@import 'foot.less';
+.sale{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+  .title{
+    width: 550px;
+    .one-ellipsis;
+    color: #666;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .detail{
+    margin-top: 20px;
+    background-color: @bg-color;
+    color: #666;
+    font-size: 15px;
+    line-height: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    .price{
+      span{
+        font-size: 20px;
+        color:#E4393C;
+      }
+    }
+    .comment{
+      span{
+        color: seagreen;
+      }
+    }
+  }
+  .number{
+    padding-left: 16px;
+    margin-top: 25px;
+    line-height: 30px;
+    font-size: 24px;
+    color: gray;
+    input{
+      width: 60px;
+      text-align: center;
+    }
+    button{
+      width: 25px;
+      cursor: pointer;
+    }
+  }
+  .buy-cart{
+    margin-top: 40px;
+    div{
+      background-color: rgb(172, 221, 94);
+      padding: 10px 25px;
+      cursor: pointer;
+      margin: 0 10px;
+      color: rgb(212, 39, 39);
+      i{
+        margin-left: 8px;
+      }
+      &:hover{
+        background-color: rgb(120, 207, 49);
+        transition: all .4s;
+      }
+    }
+  }
+}

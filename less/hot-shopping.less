@@ -1,0 +1,60 @@
+@import 'head.less';
+@import 'foot.less';
+.bg-contain{
+  width: 1226px;
+}
+.hot-good{
+  text-align: center;
+  &>p{
+    text-shadow: 2px 2px 10px green;
+    font-size: 50px;
+    color: whitesmoke;
+  }
+  .good-show{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    a{
+      border:1px solid #ccc;
+      padding: 20px 10px 0 10px;
+      margin: 10px 0;
+      width: 25%;
+      .about{
+        margin-top: 10px;
+        .price{
+          text-align: left;
+          color: red;
+        }
+        .detail{
+          .ellipsis;
+          color: #666;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: left;
+          .detail-content:hover{
+            text-decoration: underline;
+            color: blue;
+          }
+        }
+        .comment{
+          line-height: 30px;
+          text-align: left;
+        }
+      }
+      .oper{
+       color: #333;   
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: nowrap;
+       margin:5px 0 30px 0;
+       i{
+         margin-right: 5px;
+       }
+       div:hover{
+         color: orangered;
+       }
+      }
+    }
+  }
+}

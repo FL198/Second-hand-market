@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../plug/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/goodPage.css">
+  <title>商品页面展示</title>
+</head>
+
+<body>
+  <!-- 头部导航栏 -->
+  <div class="menu-contain clearfix info">
+    <div class="info-left fl"><i class="fa fa-home" aria-hidden="true"></i>欢迎<span>您</span>来到 Second-hand market</div>
+    <div class="info-right fr">
+      <ul>
+        <li>
+          <a href="loginPage.html">您好，请登录</a>
+        </li>|
+        <li>
+          <a href="registerPage.html">注册</a>
+        </li>|
+        <li>
+          <a href="collectPage.html">我的收藏<i class="fa fa-bookmark-o" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 头部搜索栏 -->
+  <div class="content-contain search">
+    <img src="../images/mainPage/icon.png" alt="Second-hand market" title="欢迎来到二手交易市场">
+    <div class="input">
+      <input type="text" autofocus>
+      <button>搜索</button>
+    </div>
+    <div class="cart">
+      <a href="cartPage.html">我的购物车<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <!-- 导航菜单栏 -->
+  <div class="content-contain menu">
+    <ul>
+      <li>
+        <a href="mainPage.html">首页</a>
+      </li>
+      <li>
+        <a href="phonePage.html">手机通讯</a>
+      </li>
+      <li>
+        <a href="ipadPage.html">平板</a>
+      </li>
+      <li>
+        <a href="computerPage.html">电脑办公</a>
+      </li>
+      <li>
+        <a href="digicamPage.html">数码影音</a>
+      </li>
+      <li>
+        <a href="luxuryPage.html">奢侈品</a>
+      </li>
+      <li>
+        <a href="home-appPage.html">家电</a>
+      </li>
+      <li>
+        <a href="bookPage.html">图书</a>
+      </li>
+    </ul>
+  </div>
+  <!-- 商品介绍 -->
+  <div class="content-contain sale"></div>
+  
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/goodPage.js?v=20200313"></script>
+  <script src="../plug/js/template-web.js"></script>
+  <script type="text/html" id="template-good">
+    <div class="img">
+      <img src="{{src}}">
+    </div>
+    <div class="desc">
+      <p class="title">{{name}}</p>
+      <div class="detail clearfix">
+        <p class="price fl">惊爆价：<span>¥{{price}}</span></p>
+        <p class="comment fr">累计评论：<span>{{comment}}</span></p>
+      </div>
+      <div class="number clearfix">
+        <p class="buy fl">购买：</p>
+        <div class="oper">
+          <button class="sub">-</button>
+          <input type="text" value="0" class="input">
+          <button class="add">+</button>
+        </div>
+      </div>
+      <div class="buy-cart clearfix">
+        <div class="buy fl" price={{price}}>点击购买<i class="fa fa-credit-card" aria-hidden="true"></i></div>
+        <div class="join-cart fl">加入购物车<i class="fa fa-cart-plus" aria-hidden="true"></i></i></div>
+      </div>
+    </div>
+  </script>
+</body>
+
+</html>

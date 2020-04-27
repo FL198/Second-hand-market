@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../plug/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/hot-shopping.css?v=20200308">
+  <title>热卖商品</title>
+</head>
+<body>
+  <!-- 头部导航栏 -->
+  <div class="menu-contain clearfix info">
+    <div class="info-left fl"><i class="fa fa-home" aria-hidden="true"></i>欢迎<span>您</span>来到 Second-hand market</div>
+    <div class="info-right fr">
+      <ul>
+        <li>
+          <a href="loginPage.html">您好，请登录</a>
+        </li>|
+        <li>
+          <a href="registerPage.html">注册</a>
+        </li>|
+        <li>
+          <a href="collectPage.html">我的收藏<i class="fa fa-bookmark-o" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 头部搜索栏 -->
+  <div class="content-contain search">
+    <img src="../images/mainPage/icon.png" alt="Second-hand market" title="欢迎来到二手交易市场">
+    <div class="input">
+      <input type="text" autofocus>
+      <button>搜索</button>
+    </div>
+    <div class="cart">
+      <a href="cartPage.html">我的购物车<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <!-- 导航菜单栏 -->
+  <div class="content-contain menu">
+    <ul>
+      <li>
+        <a href="mainPage.html">首页</a>
+      </li>
+      <li>
+        <a href="phonePage.html">手机通讯</a>
+      </li>
+      <li>
+        <a href="ipadPage.html">平板</a>
+      </li>
+      <li>
+        <a href="computerPage.html">电脑办公</a>
+      </li>
+      <li>
+        <a href="digicamPage.html">数码影音</a>
+      </li>
+      <li>
+        <a href="luxuryPage.html">奢侈品</a>
+      </li>
+      <li>
+        <a href="home-appPage.html">家电</a>
+      </li>
+      <li>
+        <a href="bookPage.html">图书</a>
+      </li>
+    </ul>
+  </div>
+  <!-- 热卖商品 -->
+  <div class="content-contain hot-good">
+    <p>热卖商品</p>
+    <div class="good-show"></div>
+  </div>
+  <!-- 底部栏 -->
+  <div class="bg-contain">
+    <div class="content-contain footer">
+      <p>关于 Second-hand market | 联系我们 | 客服电话：xxx-xxx-xxxx</p><br>
+      <p>网页制作者：2016级计算机科学与技术一班 陈玉琴</p><br>
+      <p>学号：20161251020</p>
+    </div>
+  </div>
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../plug/js/template-web.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/hot-shoppingPage.js?v=20200310"></script>
+  <script type="text/html" id="template-hot">
+    {{each list v i}}
+    <a href="javascript:0">
+      <div class="about" index={{v.id}}>
+        <img src="{{v.src}}">
+        <p class="price">¥{{v.price}}</p>
+        <p class="detail">{{v.head}}<span class="detail-content">{{v.name}}<span></p>
+        <p class="comment"><span style="color:#646FB0;">{{v.comment}}</span>条评价</p>
+      </div>
+      <div class="oper">
+        <div class="save" index-collect={{v.id}}><i class="fa fa-heart-o" aria-hidden="true"></i>收藏</div>
+        <div class="join-cart" index-cart={{v.id}}><i class="fa fa-shopping-cart" aria-hidden="true"></i>加入购物车</div>
+      </div>
+    </a>
+    {{/each}}
+  </script>
+</body>
+</html>

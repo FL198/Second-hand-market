@@ -1,0 +1,61 @@
+@import 'head.less';
+@import 'foot.less';
+.bg-contain{
+  width: 1226px;
+}
+.show-collect{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  a{
+    text-align: center;
+    width: 25%;
+    margin: 20px 1px;
+    border:1px solid #ccc;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    color: #000;
+    .about{
+      margin-top: 10px;
+      .title{
+        font-size: 12px;
+        .one-ellipsis;
+        &:hover{
+          color: red;
+        }
+      }
+      .detail{
+        line-height: 30px;
+        padding: 0 20px;
+        margin-top: 5px;
+        .price{
+          font-weight: bold;
+          line-height: 30px;
+          color: red;
+        }
+        .comment{
+          font-size: 14px;
+          i{
+            margin-left: 5px;
+            color: darkcyan;
+          }
+        }
+      }
+    }
+    .oper{
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      color: #666;
+      div{
+        &:hover{
+          color: coral;
+        }
+        i{
+          margin-right: 5px;
+         }
+      }
+    }
+  }
+}
